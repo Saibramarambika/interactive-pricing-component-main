@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="sec1">
+    <h3>Simple, traffic-based pricing</h3>
+    <p>Sign-up for our 30-day trial. No credit card required.</p>
+  </div> 
+
+  <div class="sec2">
+    <div class="sec2a">
+      <p id="pageviews">100 k Pageviews &nbsp; &nbsp; &nbsp;</p>
+      <p id="price">$16.00<span > / month</span></p>
+      <input name="price-slider" id="price-slider" type="range"
+      min="-2" max="2" step="1" value="0"
+      aria-valuemin="-2" aria-valuemax="2" aria-valuenow="0" aria-label="price range slider" />
+      <p>Monthly Billing &nbsp;
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+       &nbsp;Yearly Billing &nbsp; <button>25% discount</button> 
+      </p>
+      
+    </div>
+  
+    <hr>
+  
+    <div class="sec2b">
+      <p> <img src="./images/icon-check.svg" alt=""> Unlimited websites</p>
+      <p> <img src="./images/icon-check.svg" alt=""> 100% data ownership &nbsp; </p>
+      <p> <img src="./images/icon-check.svg" alt="">Email reports</p>
+    
+      <button>Start my trial</button>
+      
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
